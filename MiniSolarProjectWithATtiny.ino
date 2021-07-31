@@ -63,8 +63,7 @@ void Next() {
 // Prepare Decimal to binar. Write to the bool array to setup the ligthController.
 void DecimalToBinar(int val) {
 
-  int bin = 16;
-  int index = 0;
+  int bin = 16, index = 0;
 
   SetOnTo(-1);
   while(true) {
@@ -90,10 +89,8 @@ void DecimalToBinar(int val) {
 // Close running with controlling ligth out of the loop
 // The light drive 10 times left to right and back.
 void RunLight() {
-  int iteration = 0;
-  int lastTime = 0;
+  int iteration = 0,lastTime = 0, lightOn = 0;
   bool up = true;
-  int lightOn = 0;
 
   SetOnTo(lightOn);
   
